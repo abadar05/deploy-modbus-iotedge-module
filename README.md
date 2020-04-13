@@ -1,4 +1,11 @@
-Connecting modbus devices to azure iot hub
+# Connecting ModbusTCP slave devices to azure iot hub using Moxa UC-8112A IIoT Gateway running Microsoft Modbus Container (Azure IoT Edge + ThingsPro Edge)
+
+## This document lists the following steps:
+   - Install ThingsPro Edge v2.0.0
+   - Deploy Modules from Azure Portal
+   - Verify Modules on UC-8112A IIoT Gateway
+   - Setup Modbus Slave Simulator
+   - Monitor ModbusTCP Sensor D2C Telemetry data to Azure IoT Hub
 
 # Install ThingsPro Edge v2.0.0
 
@@ -67,7 +74,7 @@ journalctl -u update -f
 sudo reboot
 ```
 
-# Deploy Module from Azure Portal
+# Deploy Modules from Azure Portal
 
 ## thingspro-agent
 - Select your iotedge device from the list
@@ -201,7 +208,7 @@ https://www.modbustools.com/modbus_slave.html
 
 ![](Media/successfully-connection-established.png)
 
-# Monitor ModbusTCP Sensor Data Sent To Azure IoT Hub
+# Monitor ModbusTCP Sensor D2C Telemetry data to Azure IoT Hub
 
 ## Download and Install Azure IoT Explorer (.MSI)
 ```sh
