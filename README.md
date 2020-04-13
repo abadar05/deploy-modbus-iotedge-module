@@ -2,7 +2,7 @@ Connecting modbus devices to azure iot hub
 
 # Install ThingsPro Edge v2.0.0
 
-## Default settings 
+## Default credential and IP address
   - username/password:  moxa/moxa
   - IP LAN1 192.168.3.127 
   - IP LAN2 192.168.4.127
@@ -47,11 +47,12 @@ After the download is completed, copy .deb package file on the UC gateway via FT
  ```sh
 https://winscp.net/eng/download.php
  ```
- 
-  ```sh
- dpkg -i ./update_2.0.0-1424-uc-8112a-me-iotedge_armhf.deb
-  ```
+ - armhf:
+     ```sh
+     dpkg -i ./update_2.0.0-1424-uc-8112a-me-iotedge_armhf.deb
+     ```
 
 ## Track Installation Progress
 ```sh
 journalctl -u update -f
+```
