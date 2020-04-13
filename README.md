@@ -2,12 +2,10 @@ Connecting modbus devices to azure iot hub
 
 # Install ThingsPro Edge v2.0.0
 
-# Default settings 
+## Default settings 
   - username/password:  moxa/moxa
   - IP LAN1 192.168.3.127 
   - IP LAN2 192.168.4.127
-
-
 
 ## Set to Default
 
