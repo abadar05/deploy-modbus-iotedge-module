@@ -46,7 +46,11 @@ dhclient eth0
     dpkg -i ./update_2.0.0-1424-uc-8112a-me-iotedge_armhf.deb
     ```
 ## Download and Install ThingsPro without Internet
-Click on the url below which start downloading thingspro software, it takes 5~10 minutes depending the network speed of your internet connection. 
+Click on the url below or copy url it on your web browser which starts downloading thingspro software, it takes 10~12 minutes depending the network speed of your internet connection. 
+ ```sh
+ https://thingspro.blob.core.windows.net/software/edge/V2.0.0/update_2.0.0-1424-uc-8112a-me-iotedge_armhf.deb
+ ```
+ 
 
 After the download is completed, copy .deb package file on the UC gateway via FTP
 
