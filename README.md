@@ -172,3 +172,34 @@ Default credentials
 
 ## Azure IoT Edge
   ![](Media/tpe-aie-modulelist.png)
+  
+# Setup Modbus Slave Simulator
+
+## Download and Install Modbus slave simulator 64bit for Win10
+```sh
+https://www.modbustools.com/modbus_slave.html
+```
+>Note: There is a 10 minutes from connection limit. After 10 minutes the connection is disconnected. Re-starting the application will initiate another 10-minutes demonstration period. After 30 days it is not possible to make a connection. The license key is valid for both versions.
+
+## Modbus Slave Setup
+![](Media/modbusslave-setup.png)
+
+## Modbus Slave Definition
+![](Media/Slave-definition.png)
+
+## Define ModbusTCP Simulated THP Sensor Data
+![](Media/define-modbus-sensor-data.png)
+
+## Connection Setup 
+![](Media/slave-connection-setup.png)
+
+>Note: TCP/IP Server is the IP address of the Ethernet Interface of your notebook. Make sure the notebook IP address is on the same local network. In my case notebook IP address is 192.168.2.200 and UC-8112A LAN2 IP address is 192.168.2.127
+
+## Established Connection to the Gateway
+
+> Note: Press Ok, On successfull connection to the IIoT gateway you'll see the following output
+
+![](Media/successfully-connection-established.png)
+
+
+
