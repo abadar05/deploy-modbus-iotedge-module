@@ -155,3 +155,20 @@ sudo reboot
         
 - Review + create
    ![](Media/review-create.png)
+  
+ ## Modules Runtime Status
+   ![](Media/modules-runtime-status.png)
+   
+ > Note: After successfull deployment the iotedge device pull the module images specified in the deployment manifest and start the conatiner from the image. This takes 4~5 minutes depending on the network speed. The iot edge device sends the status updates via reported properties to azure iot hub.  
+    
+# Verify Modules on UC-8112A IIoT Gateway
+
+## Connect the gateway via Local Web GUI 
+
+Default credentials 
+  - username/password:  admin/admin@123
+
+![](Media/local-webgui.png)
+
+## Azure IoT Edge
+  ![](Media/tpe-aie-modulelist.png)
