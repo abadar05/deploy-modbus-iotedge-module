@@ -201,5 +201,15 @@ https://www.modbustools.com/modbus_slave.html
 
 ![](Media/successfully-connection-established.png)
 
+# Monitor ModbusTCP Sensor Data Sent To Azure IoT Hub
 
+## Download and Install Azure IoT Explorer (.MSI)
+```sh
+https://github.com/Azure/azure-iot-explorer/releases
+```
+## Use Azure IoT Explorer to Monitor D2C telemetry data
+![](Media/d2c-telemetry-modbustcp-simulated-sensor.png)
+
+## Modify ModbusTCP Temp Sensor 
+![](Media/change-modbus-temp-sensor-value.png)
 
