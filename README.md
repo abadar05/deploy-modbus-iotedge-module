@@ -59,7 +59,7 @@ journalctl -u update -f
 
 ## Track Installation Progress
 
-        ![](./Media/track-installation-progress.png)
+        ![](Media/track-installation-progress.png)
 
 
 
