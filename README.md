@@ -52,7 +52,14 @@ https://winscp.net/eng/download.php
      dpkg -i ./update_2.0.0-1424-uc-8112a-me-iotedge_armhf.deb
      ```
 
-## Track Installation Progress
+## Update the Installation Process
 ```sh
 journalctl -u update -f
 ```
+
+## Track Installation Progress
+
+        ![](./Media/track-installation-progress.png)
+
+
+
