@@ -67,4 +67,69 @@ journalctl -u update -f
 sudo reboot
 ```
 
+# Deploy Module from Azure Portal
 
+## thingspro-agent
+- Select your iotedge device from the list
+ ![](Media/select-iotedge-device.png)
+
+- Set Modules
+ ![](Media/set-modules.png)
+ 
+ - IoT Edge Module
+ ![](Media/iotedge-module.png)
+ 
+ - IoT Edge Module Name & Image URI
+   ![](Media/thingspro-agent-module.png)
+   - Image URI:
+       - armhf:
+            ```
+            moxa2019/thingspro-agent:2.0.0-528-armhf 
+            ```
+- Container Create Options 
+   ![](Media/thingspro-agent-container-create-options.png)
+    - Container Create Options:
+    ```
+    {
+         "HostConfig": {
+             "Binds": [
+                 "/var/thingspro/apps/cloud/data/setting/:/var/thingspro/cloudsetting/",
+                 "/run/:/host/run/",
+                 "/var/thingspro/data/:/var/thingspro/data/"
+              ]
+          }
+    }
+    ```
+## Modbus
+
+- IoT Edge Module Name & Image URI
+   ![](Media/modbus-module.png)
+   - Image URI:
+              ```
+              mcr.microsoft.com/azureiotedge/modbus:1.0 
+              ```
+            
+- Module Twin Settings
+   ![](Media/modbus-module-twin-settings.png)
+    - Module Twin Settings:
+    ```
+    {
+          "PublishInterval": 1000,
+          "SlaveConfigs": {
+              "Slave01": {
+                  "SlaveConnection": "192.168.2.200",
+                   "HwId": "GasTank-34:48:ED:98:9B:7C",
+                   "Operations": {
+                       "Op01": {
+                           "PollingInterval": "1000",
+                           "UnitId": "1",
+                           "StartAddress": "400001",
+                           "Count": "1",
+                           "DisplayName": "Temp"
+                       }
+                  }
+             }
+        }
+   }
+   ```
+              
