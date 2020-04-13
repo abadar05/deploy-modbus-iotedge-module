@@ -132,4 +132,24 @@ sudo reboot
         }
    }
    ```
-              
+
+- Routes
+    ![](Media/routes.png)
+    - NAME:
+        ```
+        route
+        ```
+    - VALUE:
+        ```
+        "FROM /messages/* INTO $upstream"
+        ```
+        
+   - NAME:
+        ```
+        modbusToIoTHub
+        ```
+    - VALUE:
+        ```
+        "FROM /messages/modules/Modbus/outputs/modbusOutput INTO $upstream"
+        ```
+
