@@ -71,7 +71,7 @@ journalctl -u update -f
 ## Track Installation Progress
    ![](Media/track-installation-progress.png)
 
-> Note: The entire process will take about ~11 minutes depends on the hardware/model. When it shows "Stopped MOXA ThingsPro Updater", you can reboot the device by command listed below
+> Note: The entire process will take about ~11 minutes depends on the hardware/model. When it shows "Stopped MOXA ThingsPro Updater", you can reboot the device by command listed below. The SSH service will be disabled after TPE is installed. 
 
 ## Reboot Device
 ```sh
